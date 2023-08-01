@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "kumar-anustha-demo-0801"
+  description: "Template based App"
+  links:
+    - title: Website
+      # Change the template in the future to collect the domain name mtk8s.io
+      # parameters.properties.name(type: string,default: 'world!')
+      url: https://kumar-anustha-demo-0801.mtk8s.io
+  annotations:
+    argocd/app-name: "kumar-anustha-demo-0801"
+    sonarqube.org/project-key: "kumar-anustha-demo-0801"
+    jenkins.io/job-full-name: "kumar-anustha-demo-0801_App_Pipeline"
+    github.com/project-slug: kbmdev/kumar-anustha-demo-0801
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: "kumar-anustha-demo-0801"
+spec:
+  type: website
+  lifecycle: experimental
+  owner: "group:default/team-account"
+  system: "system:default/account-setup"

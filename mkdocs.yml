@@ -1,0 +1,7 @@
+site_name: "kumar-anustha-demo-0801"
+docs_dir: docs
+site_description: "Template based App"
+nav:
+  - Introduction: index.md
+plugins:
+  - techdocs-core
